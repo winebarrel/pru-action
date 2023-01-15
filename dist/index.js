@@ -107,6 +107,15 @@ const install_1 = __nccwpck_require__(9039);
 const child_process_1 = __nccwpck_require__(2081);
 const util_1 = __nccwpck_require__(3837);
 const execShellCommand = (0, util_1.promisify)(child_process_1.exec);
+function getOpts() {
+    const opts = [];
+    const bases = core.getInput('bases');
+    if (bases) {
+        opts.push('-bases');
+        opts.push(bases);
+    }
+    return opts;
+}
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
@@ -118,8 +127,9 @@ function run() {
                 .split(/\s+/)
                 .map(p => p.trim());
             const token = core.getInput('github-token', { required: true });
+            const opts = getOpts();
             core.info(`Running pru in ${repo} ...`);
-            const res = yield execShellCommand(`${pruPath} ${repo} '${paths.join("' '")}'`, {
+            const res = yield execShellCommand(`${pruPath} ${opts.join(' ')} ${repo} '${paths.join("' '")}'`, {
                 env: Object.assign(Object.assign({}, process.env), { GITHUB_TOKEN: token })
             });
             if (res.stdout) {

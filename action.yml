@@ -4,7 +4,7 @@ author: "winebarrel"
 inputs:
   version:
     description: "version of pru"
-    default: "v0.2.2"
+    default: "v0.3.0"
     required: false
   repo:
     description: "owner/name of repository"
@@ -13,6 +13,9 @@ inputs:
   paths:
     description: "patterns for files included in pull requests"
     required: true
+  bases:
+    description: "base branches to update"
+    required: false
   github-token:
     description: "GitHub access token"
     default: ${{ github.token }}

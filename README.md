@@ -22,11 +22,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: winebarrel/pru-action@v0.1.0
+      - uses: winebarrel/pru-action@v0.3.0
         with:
-          # version: v0.2.2
+          # version: v0.3.0
           # repo: owner/nama
           # github-token: ***
+          # bases: main,master
           paths: |
             **/*.go
             Makefile
