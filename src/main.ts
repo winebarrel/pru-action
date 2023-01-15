@@ -32,6 +32,10 @@ async function run(): Promise<void> {
       core.info(res.stdout)
     }
 
+    if (res.stderr) {
+      core.info(res.stderr)
+    }
+
     core.info('Ran pru')
   } catch (error) {
     if (error instanceof Error) {
