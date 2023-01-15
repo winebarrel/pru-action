@@ -21,7 +21,6 @@ jobs:
     name: pru
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
       - uses: winebarrel/pru-action@v0.3.0
         with:
           # version: v0.3.0
