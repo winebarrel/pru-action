@@ -1,0 +1,22 @@
+name: "Run pru"
+description: "pur action"
+author: "winebarrel"
+inputs:
+  version:
+    description: "version of pru"
+    default: "0.2.2"
+    required: false
+  repo:
+    description: "owner/name of repository"
+    default: ${{ github.repository }}
+    required: false
+  paths:
+    description: "patterns for files included in pull requests"
+    required: true
+  github-token:
+    description: "GitHub access token"
+    default: ${{ github.token }}
+    required: false
+runs:
+  using: "node16"
+  main: "dist/index.js"
