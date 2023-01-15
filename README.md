@@ -31,3 +31,7 @@ jobs:
             **/*.go
             Makefile
 ```
+
+## Example
+
+see https://github.com/winebarrel/pru-example
