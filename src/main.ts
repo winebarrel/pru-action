@@ -8,6 +8,7 @@ async function run(): Promise<void> {
   try {
     const version = core.getInput('version', {required: true})
     const pruPath = await install(version)
+
     const repo = core.getInput('repo', {required: true})
     const paths = core
       .getInput('paths', {required: true})
