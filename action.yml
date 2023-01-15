@@ -4,7 +4,7 @@ author: "winebarrel"
 inputs:
   version:
     description: "version of pru"
-    default: "0.2.2"
+    default: "v0.2.2"
     required: false
   repo:
     description: "owner/name of repository"

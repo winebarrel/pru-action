@@ -50,7 +50,7 @@ const downloadURL = 'https://github.com/winebarrel/pru/releases/download';
 function install(version) {
     return __awaiter(this, void 0, void 0, function* () {
         core.info(`Installing pru ${version} ...`);
-        const assetURL = `${downloadURL}/v${version}/pru_${version}_linux_amd64.tar.gz`;
+        const assetURL = `${downloadURL}/${version}/pru_${version.substring(1)}_linux_amd64.tar.gz`;
         core.info(`Downloading ${assetURL} ...`);
         const archivePath = yield tc.downloadTool(assetURL);
         const extractedDir = yield tc.extractTar(archivePath, process.env.HOME, [
