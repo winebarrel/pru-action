@@ -125,6 +125,9 @@ function run() {
             if (res.stdout) {
                 core.info(res.stdout);
             }
+            if (res.stderr) {
+                core.info(res.stderr);
+            }
             core.info('Ran pru');
         }
         catch (error) {
