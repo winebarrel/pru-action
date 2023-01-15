@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: winebarrel/pru-action@master
+      - uses: winebarrel/pru-action@master
         with:
           # version: v0.2.2
           # repo: owner/nama
