@@ -15,13 +15,14 @@ on:
       - Makefile
 permissions:
   contents: write
+  pull-requests: write
 jobs:
   pru:
     name: pru
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: winebarrel/pru-action@master
+      - uses: winebarrel/pru-action@main
         with:
           # version: v0.2.2
           # repo: owner/nama
