@@ -11,7 +11,7 @@ on:
     branches:
       - main
     paths:
-      - **/*.go
+      - "**/*.go"
       - Makefile
 permissions:
   contents: write
