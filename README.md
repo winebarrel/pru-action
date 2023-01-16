@@ -25,7 +25,7 @@ jobs:
         with:
           # version: v0.3.0
           # repo: owner/nama
-          # github-token: ***
+          # github-token: *** # NOTE: If you want to trigger GitHub Actions in a merge, please use GitHub Apps or PAT
           # bases: main,master
           paths: |
             **/*.go
