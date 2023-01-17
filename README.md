@@ -4,6 +4,29 @@ GitHub action for [pru](https://github.com/winebarrel/pru).
 
 pru is a tool that updates pull requests branch from the base branch that contains specified files.
 
+```mermaid
+gitGraph
+  commit
+  commit
+  branch pr/foo
+  commit
+  commit
+  commit
+  checkout main
+  branch pr/bar
+  commit
+  commit
+  commit
+  checkout main
+  merge pr/foo tag:"merge pull request"
+  commit
+  checkout pr/bar
+  merge main tag:"auto update by pru"
+  checkout main
+  commit
+  commit
+```
+
 ## Usage
 
 ```yaml
