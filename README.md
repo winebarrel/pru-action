@@ -2,6 +2,8 @@
 
 GitHub action for [pru](https://github.com/winebarrel/pru).
 
+pru is a tool that updates pull requests branch from the base branch that contains specified files.
+
 ## Usage
 
 ```yaml
