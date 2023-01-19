@@ -1,5 +1,5 @@
 name: "Run pru"
-description: "pur action"
+description: "GitHub action for pru. pru is a tool that updates pull requests branch from the base branch that contains specified files."
 author: "winebarrel"
 inputs:
   version:
@@ -23,3 +23,6 @@ inputs:
 runs:
   using: "node16"
   main: "dist/index.js"
+branding:
+  icon: "git-pull-request"
+  color: "blue"
