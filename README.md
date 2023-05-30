@@ -45,9 +45,9 @@ jobs:
     name: pru
     runs-on: ubuntu-latest
     steps:
-      - uses: winebarrel/pru-action@v0.3.0
+      - uses: winebarrel/pru-action@v0.3.1
         with:
-          # version: v0.3.0
+          # version: v0.3.1
           # repo: owner/nama
           # github-token: *** # NOTE: If you want to trigger GitHub Actions in a merge, please use GitHub Apps or PAT
           # bases: main,master
