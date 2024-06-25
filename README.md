@@ -47,8 +47,8 @@ jobs:
     steps:
       - uses: winebarrel/pru-action@v0.3.1
         with:
-          # version: v0.3.1
-          # repo: owner/nama
+          # version: v0.4.0
+          # repo: owner/repo
           # github-token: ***
           # bases: main,master
           paths: |
