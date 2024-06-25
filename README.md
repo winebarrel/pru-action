@@ -45,9 +45,9 @@ jobs:
     name: pru
     runs-on: ubuntu-latest
     steps:
-      - uses: winebarrel/pru-action@v0.3.1
+      - uses: winebarrel/pru-action@v0.4.1
         with:
-          # version: v0.4.0
+          # version: v0.4.1
           # repo: owner/repo
           # github-token: ***
           # bases: main,master
