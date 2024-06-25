@@ -13,6 +13,13 @@ function getOpts(): string[] {
     opts.push(bases)
   }
 
+  const ignoreLabels = core.getInput('ignore-labels')
+
+  if (ignoreLabels) {
+    opts.push('-ignore-labels')
+    opts.push(ignoreLabels)
+  }
+
   return opts
 }
 

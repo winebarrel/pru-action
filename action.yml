@@ -4,7 +4,7 @@ author: "winebarrel"
 inputs:
   version:
     description: "version of pru"
-    default: "v0.3.1"
+    default: "v0.4.0"
     required: false
   repo:
     description: "owner/name of repository"
@@ -16,12 +16,15 @@ inputs:
   bases:
     description: "base branches to update"
     required: false
+  ignore-labels:
+    description: "labels for pull requests that do not update"
+    required: false
   github-token:
     description: "GitHub access token"
     default: ${{ github.token }}
     required: false
 runs:
-  using: "node16"
+  using: "node20"
   main: "dist/index.js"
 branding:
   icon: "git-pull-request"
