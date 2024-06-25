@@ -51,6 +51,7 @@ jobs:
           # repo: owner/repo
           # github-token: ***
           # bases: main,master
+          # ignore-labels: foo,bar,zoo
           paths: |
             **/*.go
             Makefile
