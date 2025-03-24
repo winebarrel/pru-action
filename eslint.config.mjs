@@ -18,13 +18,6 @@ export default [
   {
     ignores: ['**/dist/', '**/lib/', '**/node_modules/', '**/jest.config.js']
   },
-  ...compat.extends('plugin:github/recommended').map(i => {
-    if (i.rules) {
-      // cf. https://github.com/github/eslint-plugin-github/blob/main/README.md#flat-configuration-eslint-configjs
-      delete i.rules['filenames/match-regex']
-    }
-    return i
-  }),
   {
     plugins: {
       '@typescript-eslint': typescriptEslint
